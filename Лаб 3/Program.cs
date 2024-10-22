@@ -28,7 +28,7 @@ namespace Лаб_3
             graph.AddEdge(4, 5, 5); // e -> f
 
             Console.WriteLine("Список ребер з вагами:");
-            string[] vertexNames = { "a", "b", "c", "d", "e", "f" }; // Назви вершин
+            string[] vertexNames = { "a", "b", "c", "d", "e", "f" };
             foreach (var (from, to, weight) in graph.GetEdges())
             {
                 Console.WriteLine($"{vertexNames[from]} -> {vertexNames[to]} з вагою {weight}");
@@ -36,7 +36,7 @@ namespace Лаб_3
             Console.WriteLine();
 
             Console.WriteLine("Алгоритм Дейкстри:");
-            graph.Dekstra(0); // Вершина 'a' (0)
+            graph.Dekstra(0);
 
             Console.WriteLine("\nАлгоритм Флойда:");
             graph.Floyd();
